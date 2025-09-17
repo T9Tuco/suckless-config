@@ -5,7 +5,7 @@
 [![Last commit](https://img.shields.io/github/last-commit/T9Tuco/suckless-config)](https://github.com/T9Tuco/suckless-config/commits/main)
 [![Open issues](https://img.shields.io/github/issues/T9Tuco/suckless-config)](https://github.com/T9Tuco/suckless-config/issues)
 
-A fully customized **suckless** environment including `dwm`, `st`, `slstatus`, and `dwmenu`, optimized for minimalism, performance, and developer workflow.
+A fully customized **suckless** environment including `dwm`, `st`, `slstatus`, and `dwmenu`, optimized for minimalism, performance, and developer workflow on **Arch Linux**.
 
 ---
 
@@ -13,16 +13,16 @@ A fully customized **suckless** environment including `dwm`, `st`, `slstatus`, a
 
 * **dwm** – Dynamic Window Manager with custom patches and layouts.
 * **st** – Simple terminal with optimized colors and fonts.
-* **slstatus** – Lightweight status monitor for dwm.
+* **slstatus** – Lightweight status monitor.
 * **dwmenu** – Minimal and fast application launcher.
 * Custom keybindings and workflow optimizations.
 
 ## Installation
 
-Install required dependencies:
+Install required dependencies on Arch Linux:
 
 ```bash
-sudo apt install build-essential libx11-dev libxft-dev libxinerama-dev
+sudo pacman -S base-devel xorg-server xorg-xinit libx11 libxft libxinerama fontconfig dmenu
 ```
 
 Clone the repository and build:
@@ -58,7 +58,7 @@ static const char *colorname[] = {
 
 ## Dependencies
 
-* X11 libraries
+* X11 libraries (libx11, libxft, libxinerama)
 * Fontconfig & Xft
 * Make & GCC
 * Optional: `dmenu`
