@@ -1,11 +1,11 @@
 # dw - Suckless Window Manager Configuration
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![GitHub release](https://img.shields.io/github/v/release/YourUsername/dw)](https://github.com/YourUsername/dw/releases)
-[![Last commit](https://img.shields.io/github/last-commit/YourUsername/dw)](https://github.com/YourUsername/dw/commits/main)
-[![Open issues](https://img.shields.io/github/issues/YourUsername/dw)](https://github.com/YourUsername/dw/issues)
+[![GitHub release](https://img.shields.io/github/v/release/T9Tuco/suckless-config)](https://github.com/T9Tuco/suckless-config/releases)
+[![Last commit](https://img.shields.io/github/last-commit/T9Tuco/suckless-config)](https://github.com/T9Tuco/suckless-config/commits/main)
+[![Open issues](https://img.shields.io/github/issues/T9Tuco/suckless-config)](https://github.com/T9Tuco/suckless-config/issues)
 
-A fully customized **suckless** environment with `dwm`, `st`, `slstatus`, and `dwmenu`, optimized for minimalism, speed, and developer productivity.
+A fully customized **suckless** environment including `dwm`, `st`, `slstatus`, and `dwmenu`, optimized for minimalism, performance, and developer workflow.
 
 ---
 
@@ -13,35 +13,35 @@ A fully customized **suckless** environment with `dwm`, `st`, `slstatus`, and `d
 
 * **dwm** – Dynamic Window Manager with custom patches and layouts.
 * **st** – Simple terminal with optimized colors and fonts.
-* **slstatus** – Lightweight status monitor.
+* **slstatus** – Lightweight status monitor for dwm.
 * **dwmenu** – Minimal and fast application launcher.
-* Custom keybindings and workflow enhancements.
+* Custom keybindings and workflow optimizations.
 
 ## Installation
 
-Ensure dependencies are installed:
+Install required dependencies:
 
 ```bash
 sudo apt install build-essential libx11-dev libxft-dev libxinerama-dev
 ```
 
-Clone and build:
+Clone the repository and build:
 
 ```bash
-git clone https://github.com/YourUsername/dw.git
-cd dw
+git clone https://github.com/T9Tuco/suckless-config.git
+cd suckless-config
 make clean install
 ```
 
-For advanced configuration, refer to each component's documentation.
+Refer to each component's documentation for advanced configuration options.
 
 ## Configuration
 
 * **Keybindings** – `config.h` for `dwm` and `dwmenu`
 * **Colors and fonts** – `config.h` for `st`
-* **Status bar** – `slstatus.c`
+* **Status bar content** – `slstatus.c`
 
-Example terminal colors:
+Example terminal colors (`st`):
 
 ```c
 static const char *colorname[] = {
