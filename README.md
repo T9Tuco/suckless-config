@@ -6,6 +6,12 @@ The configuration is intentionally minimal. No unnecessary bloat, no complex scr
 
 ---
 
+## Preview
+
+![preview](preview.png)
+
+---
+
 ## What is included
 
 - **dwm** - Dynamic window manager. The core of the setup.
