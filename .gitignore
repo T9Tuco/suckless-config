@@ -1,0 +1,21 @@
+# Compiled binaries
+*.o
+dwm/dwm
+dmenu/dmenu
+dmenu/stest
+slstatus/slstatus
+st/st
+
+# Build artifacts
+*.orig
+*.rej
+dwm/dwm-*.tar.gz
+dmenu/dmenu-*.tar.gz
+slstatus/slstatus-*.tar.gz
+st/st-*.tar.gz
+
+# Backup directories
+dwm/Backup/
+dmenu/Backup/
+slstatus/Backup/
+st/Backup/
