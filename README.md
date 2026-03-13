@@ -15,16 +15,32 @@ The configuration is intentionally minimal. No unnecessary bloat, no complex scr
 
 ---
 
-## How to use this config
+## Dependencies
 
-Clone the repository and build each program individually.
+Install the required build dependencies with pacman:
 
 ```bash
-git clone https://github.com/t9tuco/suckless-config.git
+sudo pacman -S base-devel libx11 libxft libxinerama
+```
+
+Install the font used in this config (JetBrainsMono Nerd Font):
+
+```bash
+sudo pacman -S ttf-jetbrains-mono-nerd
+```
+
+---
+
+## How to use this config
+
+Clone the repository:
+
+```bash
+git clone https://github.com/T9Tuco/suckless-config.git
 cd suckless-config
 ```
 
-Before building, open each `config.h` and adjust paths or settings to match your system. Most importantly, in `dwm/config.h` update the theme include path:
+Before building, open `dwm/config.h` and update the theme include path to match where you cloned the repo:
 
 ```c
 #include "/your/path/to/suckless-config/dwm/Themes/wine.h"
@@ -41,24 +57,6 @@ cd slstatus && sudo make clean install && cd ..
 
 ---
 
-## Dependencies
-
-Install these before building:
-
-```bash
-sudo apt install build-essential libx11-dev libxft-dev libxinerama-dev libxrandr-dev
-```
-
-For the font used in this config (JetBrainsMono Nerd Font):
-
-```bash
-sudo apt install fonts-jetbrains-mono
-```
-
-Or grab the Nerd Font variant from https://www.nerdfonts.com
-
----
-
 ## Starting dwm
 
 Add the following to your `~/.xinitrc`:
@@ -68,7 +66,17 @@ slstatus &
 exec dwm
 ```
 
-Then start your session with `startx`.
+Then start your session with:
+
+```bash
+startx
+```
+
+If you don't have `startx`, install it:
+
+```bash
+sudo pacman -S xorg-xinit
+```
 
 ---
 
@@ -140,7 +148,13 @@ Configured in `slstatus/config.h`. Rebuild and restart slstatus after changes.
 
 ## Notifications
 
-Notifications are handled by dunst. The config is at `~/.config/dunst/dunstrc` and is styled to match the wine theme.
+Notifications are handled by dunst. Install it with:
+
+```bash
+sudo pacman -S dunst
+```
+
+The config is at `~/.config/dunst/dunstrc` and is styled to match the wine theme.
 
 Restart dunst after changes:
 
@@ -154,4 +168,4 @@ pkill dunst && dunst &
 
 - All config files in this repo are `config.h`, not `config.def.h`. The `config.def.h` files are the upstream defaults and are left for reference.
 - Patches applied to dwm are stored in `dwm/Patches/`.
-- This setup is built and tested on Arch/Debian-based Linux.
+- Built and tested on Arch Linux.
