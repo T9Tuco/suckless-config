@@ -1,6 +1,6 @@
 /* See LICENSE file for copyright and license details. */
 
-#include "/home/TucoT9/suckless/dwm/Themes/wine.h" /* If from Github: Change to your DWM Themes Folder*/
+#include "/home/TucoT9/suckless/dwm/Themes/void.h" /* If from Github: Change to your DWM Themes Folder*/
 
 /* appearance */
 static const unsigned int borderpx  = 2;        /* border pixel of windows */
