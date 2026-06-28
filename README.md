@@ -8,7 +8,13 @@ The configuration is intentionally minimal. No unnecessary bloat, no complex scr
 
 ## Preview
 
+**Wine theme + st**
+
 ![preview](preview.png)
+
+**Void theme + fastfetch**
+
+![fastfetch](fastfetch.png)
 
 ---
 
