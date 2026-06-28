@@ -1,14 +1,10 @@
 /* See LICENSE file for copyright and license details. */
-
 /* interval between updates (in ms) */
 const unsigned int interval = 1000;
-
 /* text to show if no value can be retrieved */
 static const char unknown_str[] = "n/a";
-
 /* maximum output string length */
 #define MAXLEN 2048
-
 /*
  * function            description                     argument (example)
  *
@@ -53,14 +49,15 @@ static const char unknown_str[] = "n/a";
  * wifi_essid          WiFi ESSID                      interface name (wlan0)
  * wifi_perc           WiFi signal in percent          interface name (wlan0)
  */
-
 static const struct arg args[] = {
 	/* function         format                          argument */
-	{ cpu_perc,         "  %s%%  | ",                   NULL },       // CPU Usage
-	{ ram_perc,         "  %s%%  | ",                   NULL },       // RAM Usage
+        { run_command,      "  %s%% | ",                   "cat /tmp/headset-bat 2>/dev/null" },
+        { run_command,      " %s | ",                   "cat /tmp/mullvad-status 2>/dev/null" },
+	{ cpu_perc,         "  %s%% | ",                   NULL },       // CPU Usage
+	{ ram_perc,         "  %s%% | ",                   NULL },       // RAM Usage
 	{ disk_perc,        "  %s%% (",                     "/" },        // Disk usage in percent
 	{ disk_used,        "%s/",                           "/" },        // Used disk in GB
-	{ disk_total,       "%sGB)  | ",                     "/" },        // Total disk in GB
+	{ disk_total,       "%sGB) | ",                     "/" },        // Total disk in GB
 	{ datetime,         "  %s  | ",                     "%F" },       // Date (YYYY-MM-DD)
 	{ datetime,         "  %s  ",                       "%T" }        // Time (HH:MM:SS)
 };

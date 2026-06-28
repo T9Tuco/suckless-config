@@ -16,7 +16,7 @@ The configuration is intentionally minimal. No unnecessary bloat, no complex scr
 
 - **dwm** - Dynamic window manager. The core of the setup.
 - **dmenu** - Keyboard-driven application launcher.
-- **st** - Simple terminal emulator.
+- **st** - Simple terminal emulator. Patched with scrollback support (2000 lines history).
 - **slstatus** - Lightweight status bar that feeds into the dwm bar.
 
 ---
@@ -98,7 +98,9 @@ Available themes:
 - `nord.h` - Nord-inspired palette
 - `purple.h` - Deep purple tones
 - `red.h` - Bright red accents
+- `sode_no_shirayuki.h` - Cold white and blue tones
 - `turquoise.h` - Teal and dark
+- `void.h` - Deep black minimal
 - `white.h` - Light theme
 
 To switch, for example to navy:
@@ -135,6 +137,19 @@ The default modifier key is `Alt` (Mod1).
 | Alt + Shift + R | Screenshot (flameshot) |
 | Alt + - / = | Decrease/increase gaps |
 | Alt + 1-8 | Switch to tag |
+
+---
+
+## st keybindings
+
+| Keybind | Action |
+|---|---|
+| Shift + PageUp | Scroll up through history |
+| Shift + PageDown | Scroll down through history |
+| Shift + Scroll Up | Scroll up through history |
+| Shift + Scroll Down | Scroll down through history |
+
+History buffer holds 2000 lines.
 
 ---
 
