@@ -8,11 +8,11 @@ The configuration is intentionally minimal. No unnecessary bloat, no complex scr
 
 ## Preview
 
-*Wine theme — st terminal running fastfetch, slstatus bar showing CPU, RAM, disk usage, date and time. Dark red anime wallpaper.*
+*Wine theme — st terminal running fastfetch, slstatus bar showing CPU, RAM, disk usage, date and time. Kenpachi Zaraki wallpaper (Bleach: TYBW).*
 
 ![preview](preview.png)
 
-*Void theme — st terminal running fastfetch, slstatus bar showing headset battery, Mullvad VPN status, CPU, RAM, disk usage, date and time. Grayscale anime wallpaper.*
+*Void theme — st terminal running fastfetch, slstatus bar showing headset battery, Mullvad VPN status, CPU, RAM, disk usage, date and time. Yoru wallpaper (Chainsaw Man manga).*
 
 ![fastfetch](fastfetch.png)
 
