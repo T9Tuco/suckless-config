@@ -8,11 +8,11 @@ The configuration is intentionally minimal. No unnecessary bloat, no complex scr
 
 ## Preview
 
-**Wine theme + st**
+*Wine theme — st terminal running fastfetch, slstatus bar showing CPU, RAM, disk usage, date and time. Dark red anime wallpaper.*
 
 ![preview](preview.png)
 
-**Void theme + fastfetch**
+*Void theme — st terminal running fastfetch, slstatus bar showing headset battery, Mullvad VPN status, CPU, RAM, disk usage, date and time. Grayscale anime wallpaper.*
 
 ![fastfetch](fastfetch.png)
 
